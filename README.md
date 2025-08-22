@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![Docs: GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg)](https://<org>.github.io/<repo>/)
-[![Link Health](https://img.shields.io/github/actions/workflow/status/<org>/<repo>/link-check.yml?label=link%20health)](https://github.com/<org>/<repo>/actions/workflows/link-check.yml)
+[![Link Health](https://img.shields.io/github/actions/workflow/status/VectorForgeAI/vectorforge-threat-telemetry/link-check.yml?branch=main&label=link%20health)](https://github.com/VectorForgeAI/vectorforge-threat-telemetry/actions/workflows/link-check.yml)
 
 ![Flow](assets/flow.png)
 
