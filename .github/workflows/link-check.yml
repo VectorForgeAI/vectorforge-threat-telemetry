@@ -1,6 +1,6 @@
 name: Link health
 on:
-  schedule: [{ cron: "17 2 * * *" }]
+  schedule: [{ cron: "0 */4 * * *" }]
   pull_request:
   workflow_dispatch:
 jobs:
