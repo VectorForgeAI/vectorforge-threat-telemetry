@@ -1,6 +1,14 @@
 ---
-title: VectorForge LotL Data Pack
+title: VectorForge Threat Telemetry
 ---
+
+# ⚡ VectorForge Threat Telemetry
+
+_A curated data pack for Living-off-the-Land (LotL) detection and validation_
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](../LICENSE)
+[![Docs: GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg)](https://vectorforgeai.github.io/vectorforge-threat-telemetry/)
+[![Link Health](https://img.shields.io/github/actions/workflow/status/VectorForgeAI/vectorforge-threat-telemetry/link-check.yml?label=link%20health)](https://github.com/VectorForgeAI/vectorforge-threat-telemetry/actions/workflows/link-check.yml)
+
 
 ![VectorForge LotL Data Pack](../assets/cover.png)
 
