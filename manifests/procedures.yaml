@@ -1,0 +1,17 @@
+procedures:
+  - id: T1218.010
+    name: "rundll32"
+    source: LOLBAS
+    artifacts: ["process_create","dns","netconn","script_block"]
+  - id: T1218.011
+    name: "regsvr32"
+    source: LOLBAS
+  - id: T1218.003
+    name: "cmstp"
+    source: LOLBAS
+  - id: T1197
+    name: "BITS Jobs"
+    source: ATT&CK
+  - id: T1047
+    name: "WMI Exec"
+    source: ATT&CK

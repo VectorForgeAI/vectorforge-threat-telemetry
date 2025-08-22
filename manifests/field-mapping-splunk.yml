@@ -1,0 +1,19 @@
+# Mapping: Splunk BOTS v3 → VF schema
+# (Adjust if your export uses different field names.)
+
+mappings:
+  time: _time
+  host: host
+  user: user
+  ch: sourcetype
+  event_id: EventCode
+  image: Image
+  command_line: CommandLine
+  parent_image: ParentImage
+  parent_cmd: ParentCommandLine
+  hashes: hash
+  signed_status: Signed
+  dest_ip: dest_ip
+  dest_port: dest_port
+  dns_query: query
+  registry_key: registry_key

@@ -1,0 +1,3 @@
+- [ ] All deliverables under /delivery/<option> 
+- [ ] acceptance-checklist.md completed
+- [ ] citations included (docs/data-sources.md refs)

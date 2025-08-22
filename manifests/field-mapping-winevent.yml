@@ -1,0 +1,18 @@
+# Mapping: Windows EVTX (Export‑WinEvents JSON) → VF schema
+
+mappings:
+  time: TimeCreated
+  host: Computer
+  user: UserName
+  ch: Channel
+  event_id: EventID
+  image: ProcessName
+  command_line: CommandLine
+  parent_image: ParentProcessName
+  parent_cmd: ParentCommandLine
+  hashes: Hashes
+  signed_status: Signed
+  dest_ip: DestinationIp
+  dest_port: DestinationPort
+  dns_query: QueryName
+  registry_key: RegistryKey

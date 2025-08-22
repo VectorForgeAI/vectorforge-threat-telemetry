@@ -1,0 +1,4 @@
+# Minimal Jekyll config for GitHub Pages
+title: VectorForge LotL Data Pack
+theme: minima
+markdown: kramdown

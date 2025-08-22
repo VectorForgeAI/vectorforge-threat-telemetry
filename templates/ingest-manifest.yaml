@@ -1,0 +1,19 @@
+# Ingest manifest template
+bundle:
+  option: A | B | C
+  created_utc: "2025-08-21T23:32:25.944656Z"
+  owner: "Partner Team"
+  notes: ""
+sources:
+  - name: botsv3
+    count: 0
+    files: []
+  - name: otrf-security-datasets
+    count: 0
+    files: []
+  - name: lanl-uhnd
+    count: 0
+    files: []
+hashes:
+  md5: []
+  sha256: []

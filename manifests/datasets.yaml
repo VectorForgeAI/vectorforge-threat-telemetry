@@ -1,0 +1,23 @@
+datasets:
+  - name: splunk-bots-v3
+    license: CC0-1.0
+    link: https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
+    artifacts:
+      - file: botsv3_data_set.tgz
+        md5: d7ccca99a01cff070dff3c139cdc10eb
+    rehost_policy: link_preferred_mirror_allowed
+    notes: "Contains wineventlog + xmlwineventlog:microsoft-windows-sysmon/operational"
+  - name: security-datasets-otrf
+    license: MIT
+    link: https://securitydatasets.com/create/windows.html
+    artifacts:
+      - file: selected-windows-lolbas.zip
+        md5: "<partner fills after download>"
+    rehost_policy: link_only
+  - name: lanl-unified-host-network
+    license: CC0-1.0
+    link: https://csr.lanl.gov/data/2017/
+    artifacts:
+      - file: wls_day-01.bz2
+        md5: "<partner fills>"
+    rehost_policy: link_preferred_mirror_allowed
