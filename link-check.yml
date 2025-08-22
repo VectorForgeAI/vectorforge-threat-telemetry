@@ -1,0 +1,20 @@
+name: Link health
+on:
+  schedule: [{ cron: "17 2 * * *" }]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,206,429
+            --timeout 20
+            --retry-wait-time 3
+            --retry-count 3
+            .
