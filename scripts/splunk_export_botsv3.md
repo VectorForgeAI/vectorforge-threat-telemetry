@@ -7,4 +7,4 @@
 curl -k -u admin:changeme "https://localhost:8089/services/search/jobs/export" -d search='search index=botsv3 (sourcetype=wineventlog OR sourcetype="xmlwineventlog:microsoft-windows-sysmon/operational") earliest=0' -d output_mode=json > botsv3-windows-sysmon.json
 ```
 
-3) Run the field mapping (`manifests/field-mapping-splunk.yml`) and write JSONL to `/delivery/optionA/`.
+3) Run the field mapping (`manifests/field-mapping-splunk.yml`) and write JSONL to `/workspace/optionA/`.

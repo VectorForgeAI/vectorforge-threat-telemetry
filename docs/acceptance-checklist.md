@@ -8,4 +8,4 @@ Partner must check **all**:
 [ ] BITS‑Client **59** present where BITS used  
 [ ] Sysmon **1,3,22** correlate with process + DNS/network  
 [ ] `ingest-manifest.yaml` provided with counts per channel and hashes  
-[ ] All datasets/scripts cite original sources and licenses in `/delivery/*/CITATIONS.txt`
+[ ] All datasets/scripts cite original sources and licenses in `/workspace/*/PROVENANCE.txt`

@@ -34,21 +34,21 @@
     * **Run the Export:** The one-liner in `scripts/splunk_export_botsv3.md` exports only `wineventlog` and Sysmon data to JSON for VF.
 
 3.  **Normalize Data to VF Schema**
-    Apply the provided field mappings to convert the source JSON into the standardized JSONL format required by VF. Output the files to `/delivery/optionA/`.
+    Apply the provided field mappings to convert the source JSON into the standardized JSONL format required by VF. Output the files to `/workspace/optionA/`.
     ```bash
     # Example command
-    python scripts/normalize.py --mapping manifests/field-mapping-splunk.yml --input botsv3.json --output /delivery/optionA/botsv3.jsonl
+    python scripts/normalize.py --mapping manifests/field-mapping-splunk.yml --input botsv3.json --output /workspace/optionA/botsv3.jsonl
     ```
 
-4.  **Package for Delivery**
+4.  **Package for Workspace**
     Create the manifest file from the template and generate checksums for your final `.jsonl` files.
     ```bash
-    sha256sum /delivery/optionA/*.jsonl > /delivery/optionA/hashes.txt
+    sha256sum /workspace/optionA/*.jsonl > /workspace/optionA/hashes.txt
     ```
 
 ### Partner Deliverables
 
-* `/delivery/optionA/*.jsonl` (chunked by source)
-* `/delivery/optionA/ingest-manifest.yaml` (completed)
-* `/delivery/optionA/hashes.txt` (MD5/SHA256)
+* `/workspace/optionA/*.jsonl` (chunked by source)
+* `/workspace/optionA/workspace-manifest.yaml` (completed)
+* `/workspace/optionA/hashes.txt` (MD5/SHA256)
 * Completed `docs/acceptance-checklist.md`

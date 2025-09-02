@@ -1,0 +1,11 @@
+id: T1197_BITS_job
+name: BITS job example (placeholder)
+tactic: command-and-control
+technique:
+  name: BITS Jobs
+  attack_id: T1197
+platforms:
+  windows:
+    psh:        # PowerShell executor
+      command: 'Start-BitsTransfer -Source https://example.local/file.txt -Destination $env:TEMP\vf.txt -Asynchronous'
+      timeout: 120

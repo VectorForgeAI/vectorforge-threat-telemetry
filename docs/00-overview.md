@@ -29,4 +29,4 @@ This repository is a self-contained toolkit to help your team succeed.
 * A **datasets manifest** with links, hashes, and licenses.
 * **Field mappings** to translate raw log fields into VF’s schema.
 * **Scripts** to automate fetching, converting, and exporting data.
-* A strict **acceptance checklist** for self-validating your work before delivery.
+* A strict **acceptance checklist** for self-validating your work before submission.

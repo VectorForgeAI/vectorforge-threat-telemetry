@@ -1,0 +1,17 @@
+# VF LotL Chain (Caldera adversary)
+# Chains regsvr32 -> mshta -> BITS -> WMI to light up Windows logs
+id: vf-lotl-chain
+name: VF LotL Chain (regsvr32 -> mshta -> BITS -> WMI)
+description: Chained LotL to light up Security/Sysmon/PowerShell/WMI/BITS for testing detections
+atomic_ordering:
+  - T1218.011_regsvr32
+  - T1218.001_mshta
+  - T1197_BITS_job
+  - T1047_WMI_exec
+phases:
+  initial:
+    - T1218.011_regsvr32
+    - T1218.001_mshta
+  post_ex:
+    - T1197_BITS_job
+    - T1047_WMI_exec

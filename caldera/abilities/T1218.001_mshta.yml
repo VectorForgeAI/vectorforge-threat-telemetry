@@ -1,0 +1,11 @@
+id: T1218.001_mshta
+name: mshta LotL (placeholder)
+tactic: defense-evasion
+technique:
+  name: Signed Binary Proxy Execution: mshta
+  attack_id: T1218.001
+platforms:
+  windows:
+    cmd:
+      command: 'mshta.exe javascript:close()'
+      timeout: 60

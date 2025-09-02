@@ -37,7 +37,7 @@ Follow these steps to begin using the VectorForge LotL Data Pack:
     Read the [Overview in our docs](docs/00-overview.md) to understand the core concepts and data schemas.
 
 3.  **Choose Your Path**
-    Select the delivery path (Option A, B, or C) that best fits your needs and follow the detailed instructions in its respective guide.
+    Select the workspace path (Option A, B, or C) that best fits your needs and follow the detailed instructions in its respective guide.
 
 ### Prerequisites
 

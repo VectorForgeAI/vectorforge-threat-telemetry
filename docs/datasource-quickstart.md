@@ -14,15 +14,15 @@
 - Download/Generate data
 - Verify hashes, complete citations
 - Normalize to VF schema (JSONL)
-- Package under `/delivery/<option>`
+- Package under `/workspace/<option>`
 
 ## Steps
 1) Pick Option A (download), B (generate), or C (hybrid).
 2) For every dataset: compute MD5/SHA256 and add to `manifests/datasets.yaml`.
 3) Normalize to JSONL fields: `time`, `host`, `user`, `ch`, `event_id`, `image`, `command_line`, `parent_image`, `parent_cmd`, `hashes`, `signed_status`, `dest_ip`, `dest_port`, `dns_query`, `registry_key`.
-4) Create `/delivery/<option>/ingest-manifest.yaml` and `CITATIONS.txt`.
+4) Create `/workspace/<option>/workspace-manifest.yaml` and `PROVENANCE.txt`.
 5) Run `scripts/qa_jsonl.py` locally; resolve any errors.
-6) Submit the bundle when **acceptance-checklist.md** is 100% green.
+6) Submit the working set when **acceptance-checklist.md** is 100% green.
 
 ## Quick Reference
 
@@ -36,7 +36,7 @@ See [VF Schema](vf-schema.md) for complete field definitions and examples.
 
 ### Key Files
 - `manifests/datasets.yaml` — Dataset metadata and hashes
-- `templates/ingest-manifest.yaml` — Delivery manifest template
+- `templates/workspace-manifest.example.yaml` — Workspace manifest template
 - `docs/acceptance-checklist.md` — Final validation checklist
 - `manifests/field-mapping-*.yml` — Schema mapping examples
 

@@ -1,0 +1,11 @@
+id: T1218.011_regsvr32
+name: regsvr32 LotL (placeholder)
+tactic: defense-evasion
+technique:
+  name: Signed Binary Proxy Execution: regsvr32
+  attack_id: T1218.011
+platforms:
+  windows:
+    cmd:        # executor
+      command: 'regsvr32 /u /s scrobj.dll'
+      timeout: 60

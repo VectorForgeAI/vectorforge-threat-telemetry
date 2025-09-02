@@ -13,6 +13,8 @@
    - **hashes.txt** (MD5 + SHA256 for every artifact)
 5. Run your QA (and/or `scripts/qa_jsonl.py`) until the **Quality Checklist** is 100% green.
 
+**For chained simulations:** use [simulate-lotl-caldera.md](simulate-lotl-caldera.md)
+
 ### Folder examples
 - `/workspace/optionA/*.jsonl`
 - `/workspace/optionB/<scenario>/*.jsonl`

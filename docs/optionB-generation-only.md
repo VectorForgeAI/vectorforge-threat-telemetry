@@ -19,7 +19,8 @@ Ensure your Windows hosts are configured to generate the required logs.
 ### 2. Generate LotL Activity
 Run attack simulation tools to generate telemetry.
 
-- **Atomic Red Team:** Execute discrete, ATT&CK-mapped tests for LOLBAS techniques like `regsvr32`, `rundll32`, `mshta`, `certutil`, etc.
+- **MITRE Caldera (campaign)** — run a chained LotL operation; see [simulate-lotl-caldera.md](simulate-lotl-caldera.md)
+- **Atomic Red Team (unit tests)** — quick single-technique checks for LOLBAS techniques like `regsvr32`, `rundll32`, `mshta`, `certutil`, etc.
 - **PurpleSharp:** Simulate adversary behaviors across a Windows Active Directory environment to generate logs.
 
 ---
@@ -30,7 +31,7 @@ This script is a wrapper around the OTRF Export-WinEvents tool.
 
 ```powershell
 # Run this on the target machine
-.\scripts\export_win_events.ps1 -ScenarioName "T1218_Regsvr32" -OutputDir "/delivery/optionB/T1218_Regsvr32/"
+.\scripts\export_win_events.ps1 -ScenarioName "T1218_Regsvr32" -OutputDir "/workspace/optionB/T1218_Regsvr32/"
 ```
 
 ---
@@ -42,9 +43,9 @@ Fill out `manifests/procedures.yaml` with the ATT&CK IDs, LOLBAS entries, start/
 ---
 
 ### Partner Deliverables
-- `/delivery/optionB/<scenario>/*.jsonl`
-- `/delivery/optionB/<scenario>/labels.json`
-- `/delivery/optionB/<scenario>/ingest-manifest.yaml`
+- `/workspace/optionB/<scenario>/*.jsonl`
+- `/workspace/optionB/<scenario>/labels.json`
+- `/workspace/optionB/<scenario>/workspace-manifest.yaml`
 
 ---
 

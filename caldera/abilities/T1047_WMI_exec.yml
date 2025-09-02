@@ -1,0 +1,11 @@
+id: T1047_WMI_exec
+name: WMI exec example (placeholder)
+tactic: lateral-movement
+technique:
+  name: Windows Management Instrumentation
+  attack_id: T1047
+platforms:
+  windows:
+    psh:
+      command: 'wmic process call create "cmd.exe /c echo vf > %TEMP%\vf_wmi.txt"'
+      timeout: 60
