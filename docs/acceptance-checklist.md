@@ -7,5 +7,5 @@ Partner must check **all**:
 [ ] WMI‑Activity **5857–5861** present where WMI used  
 [ ] BITS‑Client **59** present where BITS used  
 [ ] Sysmon **1,3,22** correlate with process + DNS/network  
-[ ] `ingest-manifest.yaml` provided with counts per channel and hashes  
+[ ] `workspace-manifest.yaml` provided with counts per channel and hashes  
 [ ] All datasets/scripts cite original sources and licenses in `/workspace/*/PROVENANCE.txt`
