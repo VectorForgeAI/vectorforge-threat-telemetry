@@ -19,7 +19,7 @@ title: VectorForge Threat Telemetry
 ## Start here
 - **How to use internally:** see [internal-usage.md](internal-usage.md)
 - Templates: see [/templates](../templates/)
-- **Simulate LotL with Caldera:** see [simulate-lotl-caldera.md](simulate-lotl-caldera.md)
+- **Simulate LotL with Caldera:** see [simulate-lotl-caldera.md](simulate-lotl-caldera.md) and [caldera assets](../caldera/)
 - Read the [Overview](00-overview.md)
 - Pick an option: [A](optionA-download-only.md), [B](optionB-generation-only.md), or [C](optionC-hybrid.md)
 - Validate with the [Acceptance Checklist](acceptance-checklist.md)

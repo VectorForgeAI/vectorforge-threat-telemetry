@@ -9,3 +9,4 @@ Include:
 - `workspace-manifest.yaml` (counts per file/channel)
 - `PROVENANCE.txt` (template in /templates)
 - `hashes.txt` (MD5 + SHA256)
+readme
