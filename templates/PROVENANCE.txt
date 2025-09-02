@@ -1,0 +1,12 @@
+# PROVENANCE for <working set name>
+
+Dataset: <name>
+URL: <canonical link>
+License: <CC0-1.0|MIT|GPL-3.0|...>
+Accessed: <YYYY-MM-DD>
+
+Files & Hashes:
+  - <filename>  MD5:<md5>  SHA256:<sha256>
+
+Published Hash Source: <source or "n/a">
+Notes: <mirror policy / constraints / anything reviewers should know>

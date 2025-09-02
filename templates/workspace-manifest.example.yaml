@@ -1,0 +1,21 @@
+workspace:
+  option: A
+  name: "OptionA_2025-09-02"
+  created_utc: "2025-09-02T18:30:00Z"
+sources:
+  - name: botsv3
+    count: 125000
+    files:
+      - workspace/optionA/botsv3-windows-sysmon.jsonl
+  - name: otrf-security-datasets
+    count: 42000
+    files:
+      - workspace/optionA/otrf-lolbas.jsonl
+hashes:
+  md5:
+    - botsv3-windows-sysmon.jsonl  aaaaa... (md5)
+    - otrf-lolbas.jsonl            bbbbb... (md5)
+  sha256:
+    - botsv3-windows-sysmon.jsonl  ccccc... (sha256)
+    - otrf-lolbas.jsonl            ddddd... (sha256)
+notes: "Normalized to VF schema; see PROVENANCE.txt for licensing and integrity."

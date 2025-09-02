@@ -10,6 +10,9 @@
 
 This repository provides a curated data pack and methodologies to generate and deliver crucial Living-off-the-Land (LotL) telemetry into VectorForge. It is designed to help security teams test, validate, and improve their detection capabilities.
 
+> **Scope:** Data sources only. Partners own collection, generation, streaming, and ingestion.
+
+
 ### Table of Contents
 - [🚀 Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)

@@ -2,6 +2,8 @@ name: Link health
 on:
   schedule: [{ cron: "0 */4 * * *" }]
   pull_request:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 jobs:
   lychee:
@@ -11,10 +13,5 @@ jobs:
       - uses: lycheeverse/lychee-action@v1
         with:
           args: >-
-            --verbose
-            --no-progress
-            --accept 200,206,429
-            --timeout 20
-            --retry-wait-time 3
-            --retry-count 3
+            --config lychee.toml
             .

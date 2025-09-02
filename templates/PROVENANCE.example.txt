@@ -1,0 +1,28 @@
+# PROVENANCE for Option A (Download-only)
+
+Dataset: Splunk BOTS v3 (pre-indexed)
+URL: https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
+License: CC0-1.0
+Accessed: 2025-09-02
+Files & Hashes:
+  - botsv3_data_set.tgz  MD5:d7ccca99a01cff070dff3c139cdc10eb  SHA256:<your_sha256_here>
+Published Hash Source: Splunk BOTSv3 README
+Notes: Link preferred; mirror allowed offline with canonical link + hashes retained.
+
+Dataset: Security-Datasets (OTRF) — Windows LOLBAS
+URL: https://securitydatasets.com/create/windows.html
+License: MIT
+Accessed: 2025-09-02
+Files & Hashes:
+  - selected-windows-lolbas.zip  MD5:<your_md5_here>  SHA256:<your_sha256_here>
+Published Hash Source: n/a
+Notes: Link only; preserve upstream license notice.
+
+Dataset: LANL Unified Host & Network (sample host events)
+URL: https://csr.lanl.gov/data/2017/
+License: CC0-1.0
+Accessed: 2025-09-02
+Files & Hashes:
+  - wls_day-01.bz2  MD5:<your_md5_here>  SHA256:<your_sha256_here>
+Published Hash Source: n/a
+Notes: Link preferred; mirror allowed offline with canonical link retained.
