@@ -1,5 +1,5 @@
-# Ingest manifest template
-bundle:
+# Workspace manifest template
+workspace:
   option: A | B | C
   created_utc: "2025-08-21T23:32:25.944656Z"
   owner: "Partner Team"
