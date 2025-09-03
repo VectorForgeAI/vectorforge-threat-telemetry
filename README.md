@@ -1,20 +1,42 @@
-# VectorForge LotL Data Pack
+# VectorForge Threat Telemetry
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
-[![Docs: GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg)](https://<org>.github.io/<repo>/)
+> **Scope:** Data sources only. Partners own lab setup, LotL generation, normalization, and any streaming/ingest.
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Docs: GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg)](https://vectorforgeai.github.io/vectorforge-threat-telemetry/)
 [![Link Health](https://img.shields.io/github/actions/workflow/status/VectorForgeAI/vectorforge-threat-telemetry/link-check.yml?branch=main&label=link%20health)](https://github.com/VectorForgeAI/vectorforge-threat-telemetry/actions/workflows/link-check.yml)
 
-![Flow](assets/flow.png)
+📖 **View Documentation:** https://vectorforgeai.github.io/vectorforge-threat-telemetry/
 
-> Three delivery paths for Living-off-the-Land (LotL) telemetry into VectorForge  
-> **A:** Download • **B:** Generate • **C:** Hybrid
+```mermaid
+flowchart LR
+  A[Sources] --> B[Mapping & Normalization]
+  B --> C[VectorForge Ingest]
+  subgraph Sources
+    A1[Win Sec 4688/4689]
+    A2[Sysmon 1/3/7/10/11/12–14/22]
+    A3[PowerShell 4104]
+    A4[WMI 5857–5861]
+    A5[BITS 59]
+  end
+  subgraph Mapping & Normalization
+    M1[Field maps → VF schema (JSONL)]
+    M2[PROVENANCE + hashes]
+    M3[Link-check CI]
+  end
+  subgraph VectorForge Ingest
+    V1[/workspace/<option>/*.jsonl]
+    V2[workspace-manifest + hashes]
+    V3[Quality checklist]
+  end
+```
 
 ---
 
-**Purpose:** give partners three proven paths to deliver **Living-off-the-Land (LotL)** telemetry into VectorForge (VF) with minimal back-and-forth.
+**Three workspace paths for Living-off-the-Land (LotL) telemetry into VectorForge**
 
-- **Option A — Download-only:** Seed with public, LotL-relevant datasets (Windows + Sysmon).
-- **Option B — Generation-only:** Generate LotL activity in your lab; export Windows/Sysmon/PowerShell/WMI/BITS.
+- **Option A — Download-only:** Seed with public datasets (Windows + Sysmon).
+- **Option B — Generation-only:** Generate LotL in your lab; export Windows/Sysmon/PowerShell/WMI/BITS.
 - **Option C — Hybrid:** Seed + generate for fast coverage *and* environment realism.
 
 ---
@@ -58,9 +80,9 @@
 ## How to use this repo
 
 1. Pick **Option A, B, or C** under `docs/` and follow the steps.
-2. Output normalized JSONL into `/delivery/<option>/...` using the included field mappings.
-3. Fill in `ingest-manifest.yaml` (template in `templates/`), include `hashes.txt` and `CITATIONS.txt`.
-4. Open a PR; the **link-health** GitHub Action will validate links.
+2. Output normalized JSONL into `/workspace/<option>/...` using the included field mappings.
+3. Fill in `workspace-manifest.yaml` (template in `templates/`), include `hashes.txt` and `PROVENANCE.txt`.
+4. Open a PR; the **Link Health** GitHub Action will validate links.
 
 ### Verify downloads (examples)
 
